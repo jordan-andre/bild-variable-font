@@ -50,8 +50,9 @@ grid-gap: 25px;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: auto;
 grid-template-areas: 
-    "h v"
-    "a a";
+    "h h v"
+    "a a a"
+    "d d d";
 }
 
 #history {
@@ -64,6 +65,37 @@ grid-area: v;
 
 #alphabet {
 grid-area: a;
+text-align: center;
+}
+
+#download{
+    grid-area: d;
+    width: 500px;
+    height: 60px;
+    background-color: #ffffff;
+    color: #024059;
+    border: none;
+    border-radius: 50px;
+    margin: 0 auto 30px 80px;
+    padding: 5px;
+    font-variation-settings: "wght" 600, "wdth" 100, "XHGT" 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    left: 300px;
+}
+        
+#download:hover {
+    background-color: #1F6C84;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: #024059;
+}
+a:hover{
+    color: #ffffff;
 }
 }
 
@@ -72,7 +104,15 @@ grid-area: a;
 footer{
     background-color: #ffffff;
     height: 60px;
+    display: flex;
+    justify-content: space-around;
 }
+footer p{
+    color:#024059;
+    padding: 0.5em;
+}
+
+
 /* font styling */
 h1{
     color: #024059;
@@ -119,10 +159,6 @@ h5{
 
 p {
     color: #ffffff;
-}
-
-footer {
-    color:#024059;
 }
 
 
