@@ -1,0 +1,184 @@
+@font-face {
+    src: url("fonts/BildVariableV5[XHGT\,wdth\,wght].woff2") format("woff2"),
+         url("fonts/BildVariableV5[XHGT\,wdth\,wght].woff") format("woff");
+        font-family: 'Bild';
+        font-style: normal;
+        font-weight: normal;
+        }
+    
+    body{
+    background-color: #024059;
+    font-family: 'Bild', sans-serif;
+    background-image: url("images/bild-pattern.svg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position:0 200px;
+}
+
+/* <!-- bild bild svg background hero section styling --> */
+.st0{
+    fill:#1F6C84;
+    position: relative;
+}
+#Layer_1{
+    margin-top: -20px;
+}
+
+/* b pattern svg styling*/
+.st1{
+    fill:#1F6C84;
+    position: absolute;
+}
+
+
+
+/* how the page wrapper will appear on mobile */
+.page-wrapper{
+    width: min(100% - 3rem, 80ch);
+    /* ch makes column width longer */
+    margin-inline: auto;
+}
+/* how the page wrapper appears on desktop */
+
+@media only screen and (min-width:800px){
+.page-wrapper{
+display: grid;
+grid-gap: 25px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+    "h v"
+    "a a";
+}
+
+#history {
+grid-area: h;
+}
+
+#variations{
+grid-area: v;
+}
+
+#alphabet {
+grid-area: a;
+}
+}
+
+
+/* CSS for the footer */
+footer{
+    background-color: #ffffff;
+    height: 60px;
+}
+/* font styling */
+h1{
+    color: #024059;
+}
+h2{
+    color: white;
+    font-size: 2em;
+    font-variation-settings: "wght" 600, "wdth" 100, "XHGT" 0;
+    text-transform: uppercase;
+    position: relative;
+}
+/* variable font animation */
+h3{ 
+    color: #ffffff; 
+    text-align: center;
+    font-size: 20em;
+    animation: weightChange 7s infinite;
+    margin-top: 100px;
+    padding-left: 60px;
+    position: absolute;
+    
+}
+@keyframes weightChange {
+    0%, 100%{
+        font-variation-settings:  "wght" 800, "wdth" 100, "XHGT" 0;
+    }
+    50%{font-variation-settings:  "wght" 800, "wdth" 100, "XHGT" 90;
+    }
+    
+}
+h4{
+    color: white;
+    font-variation-settings: "wght" 300, "wdth" 100, "XHGT" 0;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 20px;
+}
+h5{
+    color: white;
+    font-size: 4em;
+    margin:  15px;
+}
+
+
+p {
+    color: #ffffff;
+}
+
+footer {
+    color:#024059;
+}
+
+
+/* animations for the variations section */
+.weight{
+    animation: weightVariations 7s infinite;
+}
+@keyframes weightVariations {
+    0%, 100%{
+        font-variation-settings:  "wght" 900, "wdth" 100, "XHGT" 0;
+    }
+    50%{font-variation-settings:  "wght" 100, "wdth" 100, "XHGT" 0;
+    }
+}
+.width{
+    animation: widthVariations 7s infinite;
+}
+@keyframes widthVariations {
+    0%, 100%{
+        font-variation-settings:  "wght" 400, "wdth" 100, "XHGT" 0;
+    }
+    50%{font-variation-settings:  "wght" 400, "wdth" 0, "XHGT" 0;
+    }
+}
+.x-height{
+    animation: xVariations 7s infinite;
+}
+@keyframes xVariations {
+    0%, 100%{
+        font-variation-settings:  "wght" 400, "wdth" 100, "XHGT" 100;
+    }
+    50%{font-variation-settings:  "wght" 400, "wdth" 100, "XHGT" 0;
+    }
+}
+
+
+/* variable font that changes on hover */
+.variable-font{
+    font-weight:1 ;
+    height:100vh;
+    font-size: 10em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
+    transition: 
+        font-weight 500ms,
+        font-variation-settings 3s;
+}
+
+.variable-font:hover{
+    font-weight:500 ;
+    height:100vh;
+    font-size: 7em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
+}
+

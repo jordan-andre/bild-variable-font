@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 701.66 470.52">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1e6c84;
+        font-family: 'BildVariablev5_900.000wght_100.000XHGT', 'Bild Variable v5';
+        font-size: 200px;
+        font-variation-settings: 'wght' 900, 'wdth' 100, 'XHGT' 100;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(-3.5 167)"><tspan x="0" y="0">bild bild</tspan><tspan x="0" y="60"> </tspan><tspan x="0" y="300">bild bild</tspan></text>
+</svg>
