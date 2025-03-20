@@ -10,9 +10,9 @@
     background-color: #024059;
     font-family: 'Bild', sans-serif;
     background-image: url("images/bild-pattern.svg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position:0 200px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 500px;
 }
 
 /* <!-- bild bild svg background hero section styling --> */
@@ -27,8 +27,11 @@ background-position:0 200px;
 /* b pattern svg styling*/
 .st1{
     fill:#1F6C84;
-    position: absolute;
 }
+/* #b-pattern{
+    width: auto;
+    height: 100vh;
+} */
 
 
 
