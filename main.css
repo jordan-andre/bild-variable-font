@@ -12,7 +12,7 @@
     background-image: url("images/bild-pattern.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 0 500px;
+    background-position: 0 560px;
 }
 
 /* <!-- bild bild svg background hero section styling --> */
@@ -66,6 +66,10 @@ grid-area: v;
 #alphabet {
 grid-area: a;
 text-align: center;
+}
+#alphabet p {
+font-size: 1.5em; 
+font-variation-settings: "wght" 400, "wdth" 100, "XHGT" 0;
 }
 
 #download{
