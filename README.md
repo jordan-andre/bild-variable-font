@@ -1,2 +1,4 @@
-# type-single-page
+## Bild Variable Font Page
+This website is an interactive display of the variable font Bild, created by David Jonathan Ross. Right when it opens, the font is fulfilling its purpose of headlining and showing off its changing x-height. The typeface has three variable axes: weight, width, and x-height, which can all be seen in the variations section of the page infinitely animating from one extreme to the other. The website also includes a history paragraph about the font and the making of it, and a full character set to show off every available glyph. These three sections can be reached by clicking on the titles in the navigation bar or simply scrolling down the page. Further down, you will find the download button, which is a clickable link that leads to the Bild page on David Jonathan Ross’ website where the font can be downloaded from. Viewers can also contact me through my email in the footer. 
+
  
