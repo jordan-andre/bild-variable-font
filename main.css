@@ -103,7 +103,6 @@ a:hover{
 }
 }
 
-
 /* CSS for the footer */
 footer{
     background-color: #ffffff;
@@ -199,29 +198,68 @@ p {
 }
 
 
-/* variable font that changes on hover */
-.variable-font{
-    font-weight:1 ;
-    height:100vh;
-    font-size: 10em;
-    display:grid;
-    place-content: center;
-    margin: 0;
-    text-align: center;
-    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
-    transition: 
-        font-weight 500ms,
-        font-variation-settings 3s;
-}
 
-.variable-font:hover{
-    font-weight:500 ;
-    height:100vh;
-    font-size: 7em;
-    display:grid;
-    place-content: center;
-    margin: 0;
-    text-align: center;
-    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .page-wrapper{
+        display: grid;
+        grid-gap: 25px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "h"
+            "v"
+            "a"
+            "d";
+    }
+    #history {
+        grid-area: h;
+    }
+    
+    #variations{
+        grid-area: v;
+    }
+    
+    #alphabet {
+        grid-area: a;
+        text-align: center;
+    }
+    #alphabet p {
+        font-size: 1.5em; 
+        font-variation-settings: "wght" 400, "wdth" 100, "XHGT" 0;
+    }
+    
+    #download{
+        grid-area: d;
+        width: 500px;
+        height: 60px;
+        background-color: #ffffff;
+        color: #024059;
+        border: none;
+        border-radius: 50px;
+        margin: 0 auto 30px 80px;
+        padding: 5px;
+        font-variation-settings: "wght" 600, "wdth" 100, "XHGT" 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 40px;
+        position: relative;
+        left: 300px;
+    }
+            
+    #download:hover {
+        background-color: #1F6C84;
+        color: #ffffff;
+    }
+    a{
+        text-decoration: none;
+        color: #024059;
+    }
+    a:hover{
+        color: #ffffff;
+    }
+    h3{
+        font-size: 5em; /* Adjust the font size for mobile */
+    
+    }
 }
-
