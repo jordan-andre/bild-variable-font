@@ -220,8 +220,8 @@ p {
     }
     #history {
         grid-area: h;
-        width: 80%; /* Adjust the width for mobile */
-        max-width: 80%; /* Optional: Set a max-width */
+        width: 90%; /* Adjust the width for mobile */
+        max-width: 90%; /* Optional: Set a max-width */
     }
     #history p {
         line-height: 1.4;  
