@@ -12,8 +12,10 @@
     background-image: url("images/bild-pattern.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 0 560px;
+    background-position: center bottom;
+    position: relative;
 }
+
 
 /* <!-- bild bild svg background hero section styling --> */
 .st0{
@@ -71,7 +73,7 @@ grid-area: a;
 text-align: center;
 }
 #alphabet p {
-font-size: 1.5em; 
+font-size: 2em; 
 font-variation-settings: "wght" 400, "wdth" 100, "XHGT" 0;
 }
 
@@ -115,6 +117,10 @@ footer{
 footer p{
     color:#024059;
     padding: 0.5em;
+}
+footer a:hover {
+    color: #024059; /* Optional: Change color on hover */
+    text-decoration: underline; /* Keep underline on hover */
 }
 
 
@@ -202,7 +208,7 @@ p {
 
 
 /* Mobile Layout */
-@media (max-width: 768px) {
+@media (max-width: 799px) {
    body {
     background-image:none;
    }
@@ -272,6 +278,10 @@ p {
     h3{
         font-size: 21vw; /* Adjust the font size for mobile */
     
+    }
+    footer a {
+        text-decoration: underline;
+        color: #024059; /* Optional: Ensure the color matches your design */
     }
 
 }
