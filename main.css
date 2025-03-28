@@ -79,8 +79,9 @@ font-variation-settings: "wght" 400, "wdth" 100, "XHGT" 0;
 
 #download{
     grid-area: d;
-    width: 500px;
-    height: 60px;
+    width: 50%;
+    max-width: 400px;
+    height: auto;
     background-color: #ffffff;
     color: #024059;
     border: none;
@@ -90,7 +91,7 @@ font-variation-settings: "wght" 400, "wdth" 100, "XHGT" 0;
     font-variation-settings: "wght" 600, "wdth" 100, "XHGT" 0;
     text-transform: uppercase;
     text-align: center;
-    font-size: 40px;
+    font-size: 3em;
     position: relative;
 }
         
@@ -141,8 +142,12 @@ h3{
     text-align: center;
     font-size: 25vw;
     animation: weightChange 7s infinite;
-    margin-top: 110px;
-    padding-left: 60px;
+    top: 0%; /* Move it 50% down from the top */
+    left: 50%; /* Move it 50% from the left */
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    /* margin-top: 110px;
+    padding-left: 60px; */
     position: absolute;
     
 }
@@ -249,18 +254,19 @@ p {
     
     #download{
         grid-area: d;
-        width: 500px;
-        height: 60px;
+        width: 70%;
+        max-width: 400px;
+        height: auto;
         background-color: #ffffff;
         color: #024059;
         border: none;
         border-radius: 50px;
-        margin: 0 0 30px 0;
+        margin: 0 0 30px 25px;
         padding: 5px;
         font-variation-settings: "wght" 600, "wdth" 100, "XHGT" 0;
         text-transform: uppercase;
         text-align: center;
-        font-size: 40px;
+        font-size: 3em;
         position: relative;
     }
             
@@ -276,8 +282,10 @@ p {
         color: #ffffff;
     }
     h3{
-        font-size: 21vw; /* Adjust the font size for mobile */
-    
+        top: 2.5%; /* Move it 50% down from the top */
+        left: 50%; /* Move it 50% from the left */
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
     }
     footer a {
         text-decoration: underline;
